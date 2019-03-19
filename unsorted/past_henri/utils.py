@@ -6,8 +6,7 @@ import math
 
 
 def get_closest_points(train, test, metric='euclidean', n=None, frac=1):
-    """get n closest points or the fraction of train that is closest to the 
-       points in test
+    """get n closest points or the fraction of train that is closest to the points in test
       :returns: 3 lists
     """
     from sklearn.neighbors import NearestNeighbors
@@ -35,7 +34,7 @@ def get_closest_points(train, test, metric='euclidean', n=None, frac=1):
 
     return indices, distances, labels
 
-def myshuffle(data):
+def myshuffle(data, **kwargs):
     #warnings.warn('Use "np.random.shuffle(arr)" instead')
     warnings.warn('This does not distribute a matching shuffle across tuple elements.')
     if isinstance(data, (list, np.ndarray)):
@@ -49,6 +48,8 @@ def myshuffle(data):
         # when sampling, the indices move with the rows, so reset_index resets the index
         # to be 0, 1, 2, ... again
         return data.sample(frac=1).reset_index(drop=True)
+    elif hasattr(data, 'shuffle') and callable(data.shuffle):
+        data.shuffle(**kwargs)
     else:
         raise BaseException('Unseen data type {}'.format(type(data)))
         

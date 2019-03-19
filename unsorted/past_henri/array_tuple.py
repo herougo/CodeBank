@@ -13,14 +13,17 @@ def _concat(a, b):
         raise BaseException(f'Unhandled type {type(a)}')
 
 
-class DataSet:
+class DataArrayTuple:
     """
     Manages datasets of numpy arrays x, y, and w
 
     Future Improvements:
     - slicing returns a DataSet
-    - rename as DataArrayTuple
     - handle tuple of lists of arrays
+	- use max_nbytes (from_stream)
+	- have w be optional
+	- from_hdf and to_hdf
+	- IterDataStream unused
     """
 
     def __init__(self, x, y, w, one_hot=True, max_nbytes=100_000_000):
