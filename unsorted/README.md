@@ -1,6 +1,6 @@
 # Unsorted Area of Code Bank
 
-This is where people can post code without worrying about refactoring first. This is meant to gather as much code as possible (especially when contributors don't have much time to spare). 
+This is where people can post code without worrying about refactoring first (it is not exposed when installed as a pip package). This folder is meant to gather as much code as possible (especially when contributors don't have much time to spare). 
 
 Furthermore, this is used in the more early stage of Code Bank when proper APIs are being figured out (code is experimental). Once there is enough code and API pros and cons have been learned for a particular feature, the code can be integrated into the actual repo.
 
