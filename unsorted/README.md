@@ -14,7 +14,7 @@ Furthermore, this is used in the more early stage of Code Bank when proper APIs 
 - Files not in the above folders are meant to collect implementations of certain basic functionality (e.g. image_augmentation collects all snippets relating to image_augmentation).
 
 
-### General Notes for contributing code:
+### General Notes for Contributing Code:
 
 - leave a comment mentioning the author and whether it matches an existing Code Bank API
 - avoid global variables if you can
