@@ -12,6 +12,7 @@ A library of machine learning functionality.
 
 - collect as much ML code as possible
 - standardizing the interfaces of data loaders, environments, trainers, loss functions, metrics, models, etc
+- including more people with the interfacing goal
 - collect state-of-the-art implementations of popular ML problems
 
 ### How to contribute:
