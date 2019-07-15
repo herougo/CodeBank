@@ -17,12 +17,10 @@ A library of machine learning functionality.
 
 ### How to contribute:
 
-- (one-time 1-20 min): submit existing reusable code
-  - **to the "unsorted" folder**: no refactoring necessary (the folder is meant to simply gather as much code as possible so that it can be refactored later)
-  - **to the codebank project**: refactoring may be necessary (see the wiki)
-- (one-time 5-20 min): view the [list of problems](https://github.com/herougo/CodeBank/wiki/List-of-Problems) missing implementations and post links and/or import paths (e.g. torch.data.DataLoader) for recommended implementations
-- (one time 5-10 min reading) adapt to the [recommended standardized interfaces](https://github.com/herougo/CodeBank/wiki) designed to be easy to use and integrate with other interfaces.
-- (ongoing) submit the following kinds of ML code (formatted with the Code Bank standard interfaces)
+- **submit existing unrefactored, reusable code (one-time 1-10 min)**: you can submit unrefactored code to the "unsorted" folder and no refactoring is necessary (see the unsorted folder README for more details).
+- **View the [list of problems](https://github.com/herougo/CodeBank/wiki/List-of-Problems) and add links to implementations (one-time 5-20 min)**: you can post code links and/or import paths (e.g. torch.data.DataLoader) for recommended implementations
+- **Adapt to the [recommended standardized interfaces](https://github.com/herougo/CodeBank/wiki) (one time 5-10 min reading)**: these interfaces are designed to be easy to use and integrate with other interfaces.
+- **submit properly formatted code (ongoing)** submit the following kinds of ML code formatted with the Code Bank standard interfaces (see the wiki)
   - data loaders for datasets
   - loss functions
   - metrics
